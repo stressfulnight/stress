@@ -1,9 +1,4 @@
-game.Players.PlayerAdded:Connect(function()
-	wait(1)
-	print(1)
-	wait(2)
-	print(2)
-	wait(3)
-	print(3)
-	game.Players:WaitForChild("LocalPlayer"):Kick("Nigga really thought! maybe though")
+game.ReplicatedStorage.Kick.OnClientEvent:Connect(function()
+	local plr = game.Players.LocalPlayer
+	plr:Kick("You Have Been Permanently Banned!")
 end)
